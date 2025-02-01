@@ -13,5 +13,19 @@
             "email": "pekkisx@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "johnpbloch/wordpress-core-installer": "^2.0",
+        "johnpbloch/wordpress-core": "^6.7"
+    },
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true
+        }
+    },
+    "repositories": {
+        "wppackagist": {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    }
 }
