@@ -1,5 +1,10 @@
 FROM php:8.2-fpm
 
+# Use the default production configuration
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+
+COPY docker/php-fpm/peksu.php.ini "$PHP_INI_DIR/conf.d/peksu.php.ini"
+
 RUN apt-get update
 
 RUN apt-get install -y zlib1g-dev libpng-dev libjpeg-dev
@@ -24,4 +29,5 @@ RUN apt-get update; \
     apt-get install -y libmagickwand-dev; \
     pecl install imagick; \
     docker-php-ext-enable imagick;
+    
 
