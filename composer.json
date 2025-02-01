@@ -1,0 +1,17 @@
+{
+    "name": "pekkis/kide",
+    "description": "Kide project",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Pekkis\\Kide\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pekkis",
+            "email": "pekkisx@gmail.com"
+        }
+    ],
+    "require": {}
+}
