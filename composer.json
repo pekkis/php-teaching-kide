@@ -15,11 +15,13 @@
     ],
     "require": {
         "johnpbloch/wordpress-core-installer": "^2.0",
-        "johnpbloch/wordpress-core": "^6.7"
+        "johnpbloch/wordpress-core": "^6.7",
+        "wpackagist-plugin/phpinfo-wp": "*"
     },
     "config": {
         "allow-plugins": {
-            "johnpbloch/wordpress-core-installer": true
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true
         }
     },
     "repositories": {

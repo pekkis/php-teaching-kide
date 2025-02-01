@@ -19,6 +19,8 @@ services:
       dockerfile: docker/php-fpm/Dockerfile
     volumes:
       - ./wordpress:/var/www/html/public
+      - ./wp-content/plugins:/var/www/html/public/wp-content/plugins
+      - ./tmp/uploads:/var/www/html/public/wp-content/uploads
       - ./src/plugins/peksu-poksy:/var/www/html/public/wp-content/plugins/peksu-poksy
       - ./src/themes/peksu-poksy:/var/www/html/public/wp-content/themes/peksu-poksy
     networks:
@@ -30,6 +32,8 @@ services:
     image: nginx
     volumes:
       - ./wordpress:/var/www/html/public
+      - ./wp-content/plugins:/var/www/html/public/wp-content/plugins
+      - ./tmp/uploads:/var/www/html/public/wp-content/uploads
       - ./default.conf:/etc/nginx/conf.d/default.conf
       - ./src/plugins/peksu-poksy:/var/www/html/public/wp-content/plugins/peksu-poksy
       - ./src/themes/peksu-poksy:/var/www/html/public/wp-content/themes/peksu-poksy
