@@ -7,19 +7,20 @@ services:
       MARIADB_DATABASE: wordpress
       MARIADB_USER: wordpressuser
       MARIADB_PASSWORD: wordpresspassu
+    ports:
+      - 3306:3306
     volumes:
-      - ./db:/var/lib/mysql
+      - ./tmp/db:/var/lib/mysql
     networks:
-      - my-first-network
+      - njetwork
 
   php-fpm:
     build:
       dockerfile: docker/php-fpm/Dockerfile
-    # image: php:8.2-fpm
     volumes:
       - ./wordpress:/var/www/html/public
     networks:
-      - my-first-network
+      - njetwork
 
   web:
     image: nginx
@@ -29,8 +30,8 @@ services:
     ports:
       - 8080:80
     networks:
-      - my-first-network
+      - njetwork
 
 networks:
-  my-first-network:
+  njetwork:
     driver: bridge
