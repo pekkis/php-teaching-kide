@@ -19,7 +19,7 @@ I'm really NOT a Wordpress person, so I'm just learning by doing here!
 
 - `composer install`
 - `docker compose up`
-- surf to `http://localhost:8080`
+- surf to `http://kide.tunk.io`
 
 ### Connecting to MariaDB
 

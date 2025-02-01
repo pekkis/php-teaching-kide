@@ -21,6 +21,8 @@ services:
       - ./wordpress:/var/www/html/public
     networks:
       - njetwork
+    extra_hosts:
+      - "kide.tunk.io:host-gateway"
 
   web:
     image: nginx
@@ -28,9 +30,11 @@ services:
       - ./wordpress:/var/www/html/public
       - ./default.conf:/etc/nginx/conf.d/default.conf
     ports:
-      - 8080:80
+      - 80:80
     networks:
       - njetwork
+    extra_hosts:
+      - "kide.tunk.io:host-gateway"
 
 networks:
   njetwork:
