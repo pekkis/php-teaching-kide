@@ -22,6 +22,7 @@ services:
       - ./wp-content/plugins:/var/www/html/public/wp-content/plugins
       - ./tmp/uploads:/var/www/html/public/wp-content/uploads
       - ./src/plugins/peksu-poksy:/var/www/html/public/wp-content/plugins/peksu-poksy
+      - ./src/plugins/dubbels-image:/var/www/html/public/wp-content/plugins/dubbels-image
       - ./src/themes/peksu-poksy:/var/www/html/public/wp-content/themes/peksu-poksy
     networks:
       - njetwork
@@ -36,6 +37,7 @@ services:
       - ./tmp/uploads:/var/www/html/public/wp-content/uploads
       - ./default.conf:/etc/nginx/conf.d/default.conf
       - ./src/plugins/peksu-poksy:/var/www/html/public/wp-content/plugins/peksu-poksy
+      - ./src/plugins/dubbels-image:/var/www/html/public/wp-content/plugins/dubbels-image
       - ./src/themes/peksu-poksy:/var/www/html/public/wp-content/themes/peksu-poksy
     ports:
       - 80:80

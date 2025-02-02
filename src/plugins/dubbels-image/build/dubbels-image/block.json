@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pekkis/dubbels-image",
+  "version": "0.1.0",
+  "title": "Dubbels Image",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Dubbels Image Block",
+  "example": {},
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true
+    },
+    "html": false,
+    "align": true,
+    "alignWide": true,
+    "customClassName": true,
+    "shadow": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "background": {
+      "backgroundImage": true,
+      "backgroundSize": true
+    }
+  },
+  "textdomain": "dubbels-image",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "bg": {
+      "type": "string",
+      "attribute": "src",
+      "selector": "img .img-bg",
+      "default": "https://via.placeholder.com/150"
+    },
+    "fg": {
+      "type": "string",
+      "attribute": "src",
+      "selector": "img .img-fg",
+      "default": "https://via.placeholder.com/150"
+    }
+  }
+}

@@ -16,7 +16,8 @@
     "require": {
         "johnpbloch/wordpress-core-installer": "^2.0",
         "johnpbloch/wordpress-core": "^6.7",
-        "wpackagist-plugin/phpinfo-wp": "*"
+        "wpackagist-plugin/phpinfo-wp": "*",
+        "wpackagist-plugin/safe-svg": "^2.3"
     },
     "config": {
         "allow-plugins": {
