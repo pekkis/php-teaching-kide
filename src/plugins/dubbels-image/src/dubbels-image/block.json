@@ -8,6 +8,7 @@
 	"icon": "smiley",
 	"description": "Dubbels Image Block",
 	"example": {},
+
 	"supports": {
 		"color": {
 			"background": true,

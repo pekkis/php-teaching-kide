@@ -24,6 +24,7 @@ services:
       - ./src/plugins/peksu-poksy:/var/www/html/public/wp-content/plugins/peksu-poksy
       - ./src/plugins/dubbels-image:/var/www/html/public/wp-content/plugins/dubbels-image
       - ./src/themes/peksu-poksy:/var/www/html/public/wp-content/themes/peksu-poksy
+      - ./backups:/var/www/html/public/wp-content/wpvividbackups
     networks:
       - njetwork
     extra_hosts:
@@ -39,6 +40,7 @@ services:
       - ./src/plugins/peksu-poksy:/var/www/html/public/wp-content/plugins/peksu-poksy
       - ./src/plugins/dubbels-image:/var/www/html/public/wp-content/plugins/dubbels-image
       - ./src/themes/peksu-poksy:/var/www/html/public/wp-content/themes/peksu-poksy
+      - ./backups:/var/www/html/public/wp-content/wpvividbackups
     ports:
       - 80:80
     networks:
