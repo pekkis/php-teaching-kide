@@ -25,3 +25,8 @@ I'm really NOT a Wordpress person, so I'm just learning by doing here!
 
 - `mysql --host=127.0.0.1 --user=root --password=rootpassu wordpress`
   - `SHOW TABLES;`
+
+### Questions
+
+- Multi language
+- The wave (we don't have an asset for the wave)

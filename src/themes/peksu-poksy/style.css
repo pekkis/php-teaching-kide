@@ -6,3 +6,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+.pierpaolo {
+  .value {
+    background-color: rebeccapurple;
+    color: red;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+.aalto {
+  border-bottom: 50px solid rgb(0 0 0);
+}
